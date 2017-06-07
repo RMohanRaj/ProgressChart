@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNe-R6-Fdq" customClass="KATCircularProgress">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Progress Chart" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HiU-Ci-ev8">
+                                        <rect key="frame" x="119" y="182" width="138" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="Too-kG-GXa"/>
+                                            <constraint firstAttribute="width" constant="138" id="zkU-7u-UF6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="textColor" red="0.1142149344" green="0.62782806160000004" blue="0.94559913870000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="1Oi-kR-1bb"/>
+                                    <constraint firstAttribute="height" constant="500" id="amw-Gh-Bae"/>
+                                    <constraint firstItem="HiU-Ci-ev8" firstAttribute="centerX" secondItem="vNe-R6-Fdq" secondAttribute="centerX" id="fdJ-GT-T9Q"/>
+                                    <constraint firstItem="HiU-Ci-ev8" firstAttribute="top" secondItem="vNe-R6-Fdq" secondAttribute="top" constant="182" id="qvl-FR-v3f"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yY7-S6-o4K">
+                                <rect key="frame" x="130" y="537" width="115" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="115" id="2Lp-Uq-ecn"/>
+                                    <constraint firstAttribute="height" constant="30" id="ra0-e5-06n"/>
+                                </constraints>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <action selector="start:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K3G-Us-m4x"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yY7-S6-o4K" firstAttribute="top" secondItem="vNe-R6-Fdq" secondAttribute="bottom" constant="37" id="Ow0-T9-s8G"/>
+                            <constraint firstAttribute="trailing" secondItem="vNe-R6-Fdq" secondAttribute="trailing" id="PaR-Cd-mFz"/>
+                            <constraint firstItem="vNe-R6-Fdq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Zah-fN-FDx"/>
+                            <constraint firstItem="yY7-S6-o4K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m3m-li-vr9"/>
+                            <constraint firstItem="vNe-R6-Fdq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mp2-FH-MqJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="progressChart" destination="vNe-R6-Fdq" id="IVE-yG-yTA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+    </scenes>
+</document>
