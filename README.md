@@ -1,5 +1,8 @@
 # ProgressChart
 ProgressChart with Animation
+
+![alt text](https://github.com/RMohanRaj/LocalDataBase/blob/master/Core.jpeg)
+
 # This Project is to Create the Simple ProgressChart with Animation
 First You Have to add the Class files namely
 ```
